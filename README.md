@@ -11,6 +11,7 @@ Each ECG recording is stored as a .mat signal file with associated reference lab
 
 The goal is to utilize this dataset to investigate how deep learning models can automatically classify heart rhythm abnormalities from short ECG recordings while analyzing the effects of training parameters such as batch size and epoch count on the model's performance.
 
+
 How to run in Google Colab
 
 !pip install wfdb scipy pandas numpy

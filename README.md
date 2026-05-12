@@ -14,25 +14,25 @@ The goal is to utilize this dataset to investigate how deep learning models can 
 
 How to run in Google Colab
 
-!pip install wfdb scipy pandas numpy
+  !pip install wfdb scipy pandas numpy
 
-wget -O training2017.zip https://physionet.org/files/challenge-2017/1.0.0/training2017.zip
+  wget -O training2017.zip https://physionet.org/files/challenge-2017/1.0.0/training2017.zip
 
-!unzip training2017.zip
+  !unzip training2017.zip
 
-import os
-print(len(os.listdir("training2017")))
+  import os
+  print(len(os.listdir("training2017")))
 
-!mkdir -p models
-!mkdir -p images
-!mkdir -p src
+  !mkdir -p models
+  !mkdir -p images
+  !mkdir -p src
 
-!python src/train.py
+  !python src/train.py
+  
+  from tensorflow.keras.models import load_model
+  model = load_model("models/ecg_cnn_model.h5")
 
-from tensorflow.keras.models import load_model
-model = load_model("models/ecg_cnn_model.h5")
-
-!python src/predict.py
+  !python src/predict.py
 
 
 

@@ -77,3 +77,13 @@ if __name__ == "__main__":
     print("\nPrediction:")
     print("Class:", label)
     print("Confidence:", confidence)
+
+!python src/predict.py
+2026-05-12 13:15:25.170765: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+WARNING:absl:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+Model loaded successfully.
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 195ms/step
+
+Prediction:
+Class: Normal Rhythm (N)
+Confidence: 0.6626125

@@ -13,5 +13,6 @@ This repository provides the following:
 * Label extraction and encoding
 * 1D Convolutional Neural Network (CNN) implementation
 * Training and validation workflows in Google Colab
+* Accuracy vs Epoch and Loss vs Epoch visualizations
 
 The goal is to utilize this dataset to investigate how deep learning models can automatically classify heart rhythm abnormalities from short ECG recordings while analyzing the effects of training parameters such as batch size and epoch count on the model's performance.
